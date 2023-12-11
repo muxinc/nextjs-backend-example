@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+body {
+	padding: 25px;
+	background: rgb(226, 228, 221);
+}
+
+mux-player {
+	display: block;
+	margin: 0 0 20px;
+}
+
+form {
+	display: flex;
+	gap: 10px
+}
+
+input,
+button {
+	height: 35px;
+	padding: 5px;
+	border-radius: 0;
+}
+
+input {
+	border: 1px solid #000;
+	min-width: 200px;
+	outline: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background: rgb(250, 80, 181);
+	padding: 5px 15px;
+}
+
+button:hover {
+	background: rgb(250, 112, 195);
+}

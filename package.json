@@ -1,0 +1,18 @@
+{
+  "name": "nextjs-backend-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mux/mux-node": "^7.3.3",
+    "@mux/mux-player-react": "^2.3.0",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

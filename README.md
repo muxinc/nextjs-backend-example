@@ -1,3 +1,24 @@
+> [!NOTE]
+> The example API does no authentication and will sign a playback token (JWT) for any playback ID given to it. You should add a layer of authentication if you're considering building on top of it for a production app.
+
+This is a an example Next.js app demonstrating playing back signed video assets hosted by [Mux](https://www.mux.com).
+
+You can clone the project and deploy it for quick testing using the button below.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmuxinc%2Fnextjs-backend-example&env=MUX_TOKEN_ID,MUX_TOKEN_SECRET,MUX_SIGNING_KEY,MUX_PRIVATE_KEY)
+
+## Testing
+
+After deploying and setting up environment variables, visit `/signed-playback` and input a playback ID that has a playback policy defined as "signed".
+
+## Troubleshooting
+
+Make sure that the asset you're attempting to play belongs to the same environment that the signing key has access to. Signing keys can only sign access tokens for videos that belong to the environment it has access to.
+
+Below here is the standard Next.js readme.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
